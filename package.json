@@ -1,0 +1,25 @@
+{
+  "name": "github-status",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -L ./bin/www"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-formidable": "^1.2.0",
+    "filereader": "^0.10.3",
+    "http-errors": "~1.6.3",
+    "md5-js-tools": "^1.0.2",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.19",
+    "pug": "2.0.0-beta11",
+    "redis": "^4.3.1",
+    "response-time": "^2.3.2",
+    "sharp": "^0.31.1"
+  }
+}

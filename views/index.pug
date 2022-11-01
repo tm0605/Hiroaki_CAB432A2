@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  div.container
+    div
+      h1 #{Title}
+      p In this site, you can transform the images
+      form(id="form" ectype="multipart/form-data")
+        input(type="file" id="image" class="form-control" value="" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png" required aria-describedby="button-addon2")
+        button(class="btn btn-outline-primary" type="submit" id="button") Compress
+
+    //- #searchbar.input-group.mb-3.input-group.input-group-sm.mb-3
+    //-   input(type="file" id="image" class="form-control" value="" accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png" required aria-describedby="button-addon2") 
+    //-   button(class="btn btn-outline-primary" type="submit" id="button") Compress
+
+    #preview
+
+  script(src="https://cdn.jsdelivr.net/npm/md5-js-tools@1.0.2/lib/md5.min.js")
+  script(type="text/javascript" src="/javascripts/imagecom.js")
+  
